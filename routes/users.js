@@ -92,4 +92,15 @@ router.get('/logout', (req, res) => {
   res.redirect('/users/login');
 });
 
+router.get('/auth/google',
+  passport.authenticate('google', { scope:
+      [ 'email', 'profile' ] }
+));
+
+router.get( '/auth/google/callback',
+    passport.authenticate( 'google', {
+      successRedirect: '/dashboard',
+      failureRedirect: '/users/register '
+}));
+
 module.exports = router;

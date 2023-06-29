@@ -9,6 +9,7 @@ const app = express();
 
 // Passport Config
 require('./config/passport')(passport);
+const googleAuth = require('./config/passportGoogle');
 
 // DB Config
 const db = require('./config/db');
