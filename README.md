@@ -4,28 +4,28 @@ This is a Node.js Authentication System that provides user registration, login, 
 
 ## Features
 
-User Registration: Create new accounts with name, email, and password.
-User Login: Authenticate users with email and password.
-Password Encryption: Securely encrypt passwords for enhanced security.
-Form Validation: Validate user input on both client and server sides.
-Error Handling: Handle and display appropriate error messages.
-Google Login: Allow users to authenticate using their Google account.
-Responsive UI with Bootstrap: Provides a visually appealing and responsive design.
+- User Registration: Create new accounts with name, email, and password.
+- User Login: Authenticate users with email and password.
+- Password Encryption: Securely encrypt passwords for enhanced security.
+- Form Validation: Validate user input on both client and server sides.
+- Error Handling: Handle and display appropriate error messages.
+- Google Login: Allow users to authenticate using their Google account.
+- Responsive UI with Bootstrap: Provides a visually appealing and responsive design.
 
 ## Getting Started
 
-Clone the repository.
-Install dependencies using npm install.
-Set up the required environment variables.
-Run the application using npm start.
-Access the application through the provided URL.
+1. Clone the repository.
+2. Install dependencies using npm install.
+3. Set up the required environment variables.
+4. Run the application using npm start.
+5. Access the application through the provided URL.
 
 ## Dependencies
 
-Express.js: Backend web framework.
-MongoDB: Database for storing user information.
-Passport.js: Authentication middleware for Node.js.
-Bootstrap: Frontend framework for responsive UI.
+- Express.js: Backend web framework.
+- MongoDB: Database for storing user information.
+- Passport.js: Authentication middleware for Node.js.
+- Bootstrap: Frontend framework for responsive UI.
 
 ## License
 
@@ -33,9 +33,9 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Acknowledgements
 
-Bootstrap - For the responsive UI components.
-Passport.js - For authentication middleware.
-MongoDB - For the database functionality.
+- Bootstrap - For the responsive UI components.
+- Passport.js - For authentication middleware.
+- MongoDB - For the database functionality.
 
 ## Contributing
 
