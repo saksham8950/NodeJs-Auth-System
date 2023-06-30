@@ -7,10 +7,10 @@ const User = require('../models/User');
 const { forwardAuthenticated } = require('../config/auth');
 
 // Login Page
-router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
+router.get('/login', forwardAuthenticated, (req, res) => res.render('login', { activeLink: '/users/login' }));
 
 // Register Page
-router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
+router.get('/register', forwardAuthenticated, (req, res) => res.render('register', { activeLink: '/users/register' }));
 
 // Register
 router.post('/register', (req, res) => {
@@ -89,7 +89,7 @@ router.post('/login', (req, res, next) => {
 router.get('/logout', (req, res) => {
   req.logout();
   req.flash('success_msg', 'You are logged out');
-  res.redirect('/users/login');
+  res.redirect('/');
 });
 
 router.get('/auth/google',
@@ -100,7 +100,7 @@ router.get('/auth/google',
 router.get( '/auth/google/callback',
     passport.authenticate( 'google', {
       successRedirect: '/dashboard',
-      failureRedirect: '/users/register '
+      failureRedirect: '/users/register'
 }));
 
 module.exports = router;

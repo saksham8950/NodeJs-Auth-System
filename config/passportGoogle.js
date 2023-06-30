@@ -7,7 +7,7 @@ const crypto = require('crypto');
 module.exports.passport = passport.use(new GoogleStrategy({
     clientID:     process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:5001/auth/google/callback",
+    callbackURL: "http://localhost:5001/users/auth/google/callback",
     passReqToCallback   : true
   }, (request, accessToken, refreshToken, profile, done) => {
 
@@ -23,7 +23,7 @@ module.exports.passport = passport.use(new GoogleStrategy({
                         name : profile.displayName,
                         email: profile.emails[0].value,
                         password: crypto.randomBytes(20).toString('hex')
-                    }).exec()
+                    })
                 .then(user => { return done(null,user); })
                 .catch (err => {
                     console.log('error in google stratergy-passport',err); 
