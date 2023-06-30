@@ -8,7 +8,6 @@
 // db.on('error', console.error.bind(console,'error connecting to db'));
 // db.once('open', () => { console.log('Successfully connected to the database')});
 
-
 const mongoose = require('mongoose');
 require("dotenv").config();
 
