@@ -9,6 +9,7 @@
 // db.once('open', () => { console.log('Successfully connected to the database')});
 
 const mongoose = require('mongoose');
+require("dotenv").config();
 
 // cloud connection-Str
 let cloudDB = process.env.DATABASE.replace(
