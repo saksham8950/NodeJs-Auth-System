@@ -7,7 +7,7 @@ const crypto = require('crypto');
 module.exports.passport = passport.use(new GoogleStrategy({
     clientID:     process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:5001/users/auth/google/callback",
+    callbackURL: "https://nodejs-auth-system.onrender.com/users/auth/google/callback",
     passReqToCallback   : true
   }, (request, accessToken, refreshToken, profile, done) => {
 
