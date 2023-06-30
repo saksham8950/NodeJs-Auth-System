@@ -26,5 +26,5 @@ mongoose.connect(cloudDB, {
 }).then(() => {
   console.log('DB connect success :)');
 }).catch(() => {
-  console.log('Error to connect DB !!!');
+  console.log('Error connecting DB !!!');
 });
